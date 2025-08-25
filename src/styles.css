@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+  font-feature-settings: "cv02","cv03","cv04","cv11";
+}
+
+.card {
+  @apply rounded-2xl bg-slate-900/60 border border-slate-800 shadow-lg shadow-black/20;
+}
+
+.card-header {
+  @apply text-sm font-medium text-slate-300;
+}
+
+.kpi-value {
+  @apply text-2xl md:text-3xl font-semibold text-white;
+}
+
+.kpi-delta-up {
+  @apply text-emerald-400;
+}
+.kpi-delta-down {
+  @apply text-rose-400;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full px-2.5 py-1 text-xs font-medium bg-slate-800 border border-slate-700 text-slate-300;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-medium bg-brand-600 hover:bg-brand-500 transition-colors;
+}
+
+.btn-muted {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 font-medium bg-slate-800 hover:bg-slate-700 transition-colors;
+}
+
+.tab {
+  @apply px-3 py-1.5 rounded-lg text-sm font-medium bg-slate-800/60 hover:bg-slate-700/60 transition-colors;
+}
+.tab-active {
+  @apply bg-brand-600 hover:bg-brand-600 text-white;
+}
